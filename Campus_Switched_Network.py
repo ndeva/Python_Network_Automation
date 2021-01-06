@@ -9,6 +9,7 @@ with open('switched_campus_configs') as f:
     lines = f.read().splitlines()
 print(lines)
 
+# access switches
 all_devices = [access_S5, access_S4, access_S3]
 
 for devices in all_devices:
@@ -21,6 +22,7 @@ with open('core_switches_configs') as f:
     lines = f.read().splitlines()
 print(lines)
 
+# core switches
 all_devices = [core_S2, core_S1]
 
 for devices in all_devices:
