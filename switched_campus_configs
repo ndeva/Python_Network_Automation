@@ -27,11 +27,11 @@ interface vlan 1
  description In-band Management
 
 ip default-gateway 192.168.122.1
-ip dhcp snooping vlan 10,20
+ip dhcp snooping vlan 2,10,20
 
 no ip dhcp snooping information option
 ip dhcp snooping
-ip arp inspection vlan 10,20
+ip arp inspection vlan 2,10,20
 spanning-tree portfast bpduguard default
 ipv6 nd raguard policy HOST_POLICY
  device-role host
