@@ -16,6 +16,7 @@ for devices in all_devices:
     output = net_connect.send_config_set(lines)
     print(output)
 
+# open configuration file for core switches
 with open('core_switches_configs') as f:
     lines = f.read().splitlines()
 print(lines)
