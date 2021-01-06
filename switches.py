@@ -24,6 +24,7 @@ for n in range(71, 76):
         tn.write("name VLAN_{}\n".format(v).encode())
 
     tn.write(b"end\n")
+    tn.write(b"wr\n")
     tn.write(b"exit\n")
 
     print(tn.read_all().decode('ascii'))
